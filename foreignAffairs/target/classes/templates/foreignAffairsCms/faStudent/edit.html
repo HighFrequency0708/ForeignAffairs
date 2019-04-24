@@ -1,0 +1,226 @@
+<!--# layout("/common/layout.html",{"jsBase":"/js/foreignAffairsCms/faStudent/"}){ -->
+
+<form class="layui-form layui-form-pane" id="updateForm">
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">studentId</label>
+				<div class="layui-input-inline">
+					<input type="text" id="studentId" name="studentId"  value="${faStudent.studentId}"  lay-verify="required" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">hostInstitution</label>
+				<div class="layui-input-inline">
+					<input type="text" id="hostInstitution" name="hostInstitution"  value="${faStudent.hostInstitution}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">name</label>
+				<div class="layui-input-inline">
+					<input type="text" id="name" name="name"  value="${faStudent.name}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">familyName</label>
+				<div class="layui-input-inline">
+					<input type="text" id="familyName" name="familyName"  value="${faStudent.familyName}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">givenNames</label>
+				<div class="layui-input-inline">
+					<input type="text" id="givenNames" name="givenNames"  value="${faStudent.givenNames}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">nationality</label>
+				<div class="layui-input-inline">
+					<input type="text" id="nationality" name="nationality"  value="${faStudent.nationality}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">passportNo</label>
+				<div class="layui-input-inline">
+					<input type="text" id="passportNo" name="passportNo"  value="${faStudent.passportNo}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">sex</label>
+				<div class="layui-input-inline">
+					<layui:simpleDictSelect style='layui-input-inline' type="gender"
+						id="sex" name="sex" value="${faStudent.sex}" layVerify="" />
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">maritalStatus</label>
+				<div class="layui-input-inline">
+					<input type="text" id="maritalStatus" name="maritalStatus"  value="${faStudent.maritalStatus}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">dateOfBirth</label>
+				<div class="layui-input-inline">
+					<input type="text" id="dateOfBirth" name="dateOfBirth"  value="${faStudent.dateOfBirth}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">placeOfBirth</label>
+				<div class="layui-input-inline">
+					<input type="text" id="placeOfBirth" name="placeOfBirth"  value="${faStudent.placeOfBirth}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">homeAddr</label>
+				<div class="layui-input-inline">
+					<input type="text" id="homeAddr" name="homeAddr"  value="${faStudent.homeAddr}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">telAddr</label>
+				<div class="layui-input-inline">
+					<input type="text" id="telAddr" name="telAddr"  value="${faStudent.telAddr}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">hado</label>
+				<div class="layui-input-inline">
+					<input type="text" id="hado" name="hado"  value="${faStudent.hado}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">occupation</label>
+				<div class="layui-input-inline">
+					<input type="text" id="occupation" name="occupation"  value="${faStudent.occupation}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">eoia</label>
+				<div class="layui-input-inline">
+					<input type="text" id="eoia" name="eoia"  value="${faStudent.eoia}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">fosic</label>
+				<div class="layui-input-inline">
+					<input type="text" id="fosic" name="fosic"  value="${faStudent.fosic}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">fosicStart</label>
+				<div class="layui-input-inline">
+					<input type="text" id="fosicStart" name="fosicStart"  value="${faStudent.fosicStart}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">fosicEnd</label>
+				<div class="layui-input-inline">
+					<input type="text" id="fosicEnd" name="fosicEnd"  value="${faStudent.fosicEnd}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">studentStatus</label>
+				<div class="layui-input-inline">
+					<input type="text" id="studentStatus" name="studentStatus"  value="${faStudent.studentStatus}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">dfrDay</label>
+				<div class="layui-input-inline">
+					<input type="text" id="dfrDay" name="dfrDay"  value="${faStudent.dfrDay}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">reference</label>
+				<div class="layui-input-inline">
+					<input type="text" id="reference" name="reference"  value="${faStudent.reference}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">referenceTel</label>
+				<div class="layui-input-inline">
+					<input type="text" id="referenceTel" name="referenceTel"  value="${faStudent.referenceTel}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">guarantorChina</label>
+				<div class="layui-input-inline">
+					<input type="text" id="guarantorChina" name="guarantorChina"  value="${faStudent.guarantorChina}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">guarantorTel</label>
+				<div class="layui-input-inline">
+					<input type="text" id="guarantorTel" name="guarantorTel"  value="${faStudent.guarantorTel}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">financialFunding</label>
+				<div class="layui-input-inline">
+					<input type="text" id="financialFunding" name="financialFunding"  value="${faStudent.financialFunding}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <layui:attachment name="attachmentId" batchFileUUID="${faStudent.attachmentId!uuid()}" isNew="false" bizId="${faStudent.id}" bizType="FaStudent"/>
+    </div>
+	<!-- 业务对象须有hidden字段，保存delFlag和version字段-->
+    <input type="hidden" name="id" value=${faStudent.id} />
+    <layui:submitButtons id="updateButton" />
+</form>
+<!--#} -->
+<script>
+layui.use(['edit'], function(){
+    var faStudentEdit = layui.edit
+    faStudentEdit.init();
+});
+</script>

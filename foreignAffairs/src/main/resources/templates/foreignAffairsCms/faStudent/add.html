@@ -1,0 +1,224 @@
+<!--# layout("/common/layout.html",{"jsBase":"/js/foreignAffairsCms/faStudent/"}){ -->
+
+<form class="layui-form layui-form-pane" id="addForm">
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">学生学号</label>
+				<div class="layui-input-inline">
+					<input type="text" name="studentId" class="layui-input" lay-verify="required">
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">接收院校</label>
+				<div class="layui-input-inline">
+					<input type="text" name="hostInstitution" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">姓名</label>
+				<div class="layui-input-inline">
+					<input type="text" name="name" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">姓</label>
+				<div class="layui-input-inline">
+					<input type="text" name="familyName" class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">名</label>
+				<div class="layui-input-inline">
+					<input type="text" name="givenNames" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">国籍</label>
+				<div class="layui-input-inline">
+					<input type="text" name="nationality" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">护照号码</label>
+				<div class="layui-input-inline">
+					<input type="text" name="passportNo" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">性别</label>
+				<div class="layui-input-inline">
+					<layui:simpleDictSelect style='layui-input-inline' type="gender" layVerify=""
+								id="sex" name="sex" value="" />
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">婚否</label>
+				<div class="layui-input-inline">
+					<input type="text" name="maritalStatus" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">出生日期</label>
+				<div class="layui-input-inline">
+					<input type="text" name="dateOfBirth" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">出生地点</label>
+				<div class="layui-input-inline">
+					<input type="text" name="placeOfBirth" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">家庭地址</label>
+				<div class="layui-input-inline">
+					<input type="text" name="homeAddr" class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">家庭电话</label>
+				<div class="layui-input-inline">
+					<input type="text" name="telAddr" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">最高学历</label>
+				<div class="layui-input-inline">
+					<input type="text" name="hado" class="layui-input" >
+				</div>
+            </div>
+                        <div class="layui-inline">
+            <label class="layui-form-label">职业</label>
+				<div class="layui-input-inline">
+					<input type="text" name="occupation" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">所在单位</label>
+				<div class="layui-input-inline">
+					<input type="text" name="eoia" class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">学习专业</label>
+				<div class="layui-input-inline">
+					<input type="text" name="fosic" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">开始年月</label>
+				<div class="layui-input-inline">
+					<input type="text" name="fosicStart" class="layui-input" >
+				</div>
+            </div>
+                        <div class="layui-inline">
+            <label class="layui-form-label">结束年月</label>
+				<div class="layui-input-inline">
+					<input type="text" name="fosicEnd" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">学生类别</label>
+				<div class="layui-input-inline">
+					<input type="text" name="studentStatus" class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">注册截至日</label>
+				<div class="layui-input-inline">
+					<input type="text" name="dfrDay" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">推荐人单位</label>
+				<div class="layui-input-inline">
+					<input type="text" name="reference" class="layui-input" >
+				</div>
+            </div>
+                        <div class="layui-inline">
+            <label class="layui-form-label">推荐人电话</label>
+				<div class="layui-input-inline">
+					<input type="text" name="referenceTel" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">在华担保人</label>
+				<div class="layui-input-inline">
+					<input type="text" name="guarantorChina" class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">担保人电话</label>
+				<div class="layui-input-inline">
+					<input type="text" name="guarantorTel" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">经费来源</label>
+            	<div class="layui-input-inline">
+					<layui:simpleDictSelect style='layui-input-inline' type="financial_funding" layVerify=""
+								id="financialFunding" name="financialFunding" value="" />
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">担保人电话</label>
+				<div class="layui-input-inline">
+					<input type="text" name="fswbpb" class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">担保人电话</label>
+				<div class="layui-input-inline">
+					<input type="text" name="fswbpbTel" class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <!-- 业务对象得有一个字段保存附件id，假设是attachmentId  -->
+        <layui:attachment name="attachmentId" batchFileUUID="${uuid()}"  bizType="entity.name" isNew="true"  />
+    </div>
+    <layui:submitButtons id="addButton" />
+</form>
+<!--#} -->
+<script>
+layui.use(['add'], function(){
+    var faStudentAdd = layui.add
+    faStudentAdd.init();
+});
+</script>
