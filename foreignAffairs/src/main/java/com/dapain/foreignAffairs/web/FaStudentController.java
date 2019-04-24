@@ -196,6 +196,9 @@ public class FaStudentController{
         return JsonResult.success();
     }
     
-    
+    public JsonResult<String> aaa(HttpServletResponse response,FaStudentQuery condtion){
+		return null;
+    	
+    }
 
 }
